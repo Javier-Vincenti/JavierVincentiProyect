@@ -1,0 +1,262 @@
+a{
+color: black;
+}
+a:hover {
+    color: gray;
+}
+#p1 {
+    color: black;
+
+    /*ajustes a phone, tablet, and computer*/
+
+    @media (max-width: 375px) {
+  h1 {
+    font-size: 5%; /* título más chico */
+  }
+
+  #table2 {
+    font-size: 10px; /* texto más pequeño */
+    padding: 5%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+    font-size: 6px;
+    padding: 2px 5px; /* achica botones*/
+  }
+  
+
+  #photo1 {
+    width: 30px; /* foto más chica */
+    float: none;  /* que no se vaya a la derecha */
+    display: block;
+    margin: 0 auto; /* centrada */
+  }
+}
+
+/*  Tablets (hasta 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  #table2 {
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  .navbar ul {
+    gap: 20px; /* menos espacio entre links */
+  }
+
+  #photo1 {
+    width: 120px;
+  }
+}
+
+/* 💻 Pantallas grandes (desde 1024px en adelante) */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 40px; /* tamaño normal grande */
+  }
+
+  #table2 {
+    font-size: 28px;
+    padding: 20px;
+  }
+
+  .navbar ul {
+    gap: 50px; /* espacio cómodo entre links */
+  }
+
+  #photo1 {
+    width: 150px;
+  }
+}
+
+
+
+/* index */
+
+}
+
+#body1 {
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}  
+ .navbar ul {
+  
+  display: flex; /* los pone en fila */
+  flex-direction: column;
+  justify-content: center; /* centra todo */
+  gap: 40px; /* espacio entre links */
+}
+
+.navbar li {
+  display: inline; /* cada item en línea */
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none; /* saca el subrayado */
+  font-weight: bold;
+  padding: 10px 15px; /* que parezcan botones */
+  background-color: bisque;
+  border-radius: 30px;
+ 
+}
+
+.navbar a:hover {
+  background-color: black;
+  color: white;
+}
+
+    
+    background-image: url("wlcm2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* about me*/
+#head2 {
+    color: black;
+    
+}
+#photo1 {
+  width: 150px;       
+  height: auto;       
+  float: right;       
+  margin: 10px 10px 10px 40px; 
+  /* arriba | derecha | abajo | izquierda */
+  border: 3px solid black;
+  border-radius: 10px;
+
+}
+#table2 {
+
+  color: black;
+  font-family: 'Poppins';
+  font-size: 35px;
+
+  border: 3px solid black;         /* marco */
+  border-radius: 15px;             /* esquinas redondeadas */
+  padding: 20px;                   /* espacio interno */
+  margin: 40px auto;               /* centrar en la página */
+  background-color: beige;      /* fondo */
+  max-width: 1000px;                /* ancho máximo */
+  background-image: url("about3.jpg");
+  
+ background-size: cover;
+  background-repeat: no-repeat;
+
+  background-color: rgba(255, 255, 255, 0.5); /* !!!!transparaencia para el fondo rgba significa Rojo, Verde, Azul, Alfa (transparencia).255, 255, 255 = blanco
+0.7 = 70% opaco (30% transparente).*/
+  background-blend-mode: lighten;             /* mezcla imagen con el color */
+ ;
+}
+
+
+  
+  
+
+
+
+/* cv */
+#body3 {
+    color: black;
+    font-family: 'Poppins';
+    font-size: 15px;
+
+    background-image: url("cv4.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+     background-color: rgba(255, 255, 255, 0.3); /* importante recordar esta arriba!!!*/
+     background-blend-mode: lighten;
+
+.cv-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px; /* espacio entre cajas */
+  margin: 10px;
+}
+
+.box {
+  background-color: rgb(226, 226, 215); /* color de fondo */
+  border: 1px solid black;   /* borde */
+  border-radius: 10px;      /* esquinas redondeadas */
+  padding: 15px;            /* espacio interno */
+  
+}
+
+     
+}
+
+/* Portfolio */
+
+/* Contenedor general de los proyectos */
+.projects {
+  display: grid; /* Activa Grid Layout (cuadrícula) */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  /* Crea columnas: cada tarjeta ocupa al menos 250px 
+     y se repiten tantas como entren en la pantalla */
+  gap: 20px; /* Espacio entre las tarjetas */
+  margin: 20px; /* Margen alrededor del bloque de proyectos */
+}
+
+/* Cada proyecto individual (tarjeta) */
+.project {
+  background-color:beige; /* Fondo blanco */
+  padding: 15px; /* Espacio interno entre borde y contenido */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center; /* Centra el contenido de la tarjeta */
+e
+
+}
+
+.project img {
+  max-width: 100%; /* No pasa el ancho de la tarjeta */
+  height: 200px; /* Fija altura igual para todas las imágenes */
+  object-fit: cover; 
+  /* Ajusta la imagen sin deformarla: recorta si es necesario */
+  border-radius: 8px; /* Bordes redondeados en la foto */
+}
+
+/* Título del proyecto */
+.project h2 {
+  margin: 10px 0; /* Espacio arriba y abajo */
+  font-size: 1.3rem; /* Tamaño de fuente */
+}
+
+/* Texto de descripción */
+.project p {
+  font-size: 0.9rem; /* Texto un poco más chico */
+  color: #333; /* Gris oscuro para que no sea negro fuerte */
+}
+
+/* Botón con enlace */
+.project a {
+  display: inline-block; /* Para que se comporte como botón */
+  margin-top: 10px; /* Espacio arriba del botón */
+  text-decoration: none; /* Quita el subrayado */
+  color: black; /* Texto blanco */
+  background: black /* Fondo azul */
+
+  border-radius: 5px; /* Bordes redondeados */
+  
+}
+
+/* Cambio de color al pasar el mouse sobre el botón */
+.project a:hover {
+  background: gray; /*  más oscuro */
+  
+}
